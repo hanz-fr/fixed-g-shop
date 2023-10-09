@@ -10,7 +10,13 @@ export default function Home() {
     >
       {/* Top Bar */}
       <div className="col-span-1 h-[60px] border-b border-[#D7D7D7]"></div>
-      <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7]"></div>
+      <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7]">
+        <div className="flex justify-end h-full pr-3">
+          <div className="my-auto">
+            <ThemeButton />
+          </div>
+        </div>
+      </div>
       <div className="col-span-1 h-[60px] border-b border-[#D7D7D7]"></div>
 
       {/* Hero Section */}
