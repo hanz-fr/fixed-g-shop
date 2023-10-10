@@ -82,7 +82,7 @@ export default function Home() {
       </div>
       <div className="col-span-1"></div>
 
-      {/* Middle Bar */}
+      {/*  Separator */}
       <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
       <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] px-10 py-4">
         <h1 className="text-[#D7D7D7] font-thin">fixed.g/bikes</h1>
@@ -151,6 +151,30 @@ export default function Home() {
         </div>
       </div>
       <div className="col-span-1"></div>
+
+      {/*  Separator */}
+      <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
+      <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] px-10 py-4">
+        <div className="flex justify-end">
+          <h1 className="text-[#D7D7D7] font-thin">fixed.g/repair</h1>
+        </div>
+      </div>
+      <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
+
+      {/* Repair Bike Section */}
+      <div className="col-span-1"></div>
+      <div className="col-span-12 border-x pb-[50px] border-[#D7D7D7]">
+        <div className="w-[500px] h-[500px]">
+          <h1>Bike Repair Section</h1>
+        </div>
+      </div>
+      <div className="col-span-1">
+        <h1
+          className="mx-auto mt-10 text-[#D7D7D7] font-thin [writing-mode:vertical-lr]"
+        >
+          02 - FG
+        </h1>
+      </div>
     </div>
   );
 }
