@@ -99,6 +99,7 @@ export default function Home() {
         </h1>
       </div>
       <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7]">
+        {/* absolute bg element */}
         <Image
           className="invisible md:visible absolute -z-50 -bottom-[300px] right-[30%]"
           width={500}
@@ -106,6 +107,7 @@ export default function Home() {
           src={"/assets/svg/wrench_element.svg"}
           alt={"wrench.svg"}
         ></Image>
+        {/* ------------------- */}
         <div className="flex flex-col md:flex-row justify-between m-[12px] md:m-[20px] 2xl:m-[50px]">
           <div className="basis-2/3 grid grid-cols-4 gap-3">
             <img
@@ -128,6 +130,12 @@ export default function Home() {
               src="/assets/img/bike - 04.png"
               alt="bike - 04"
             ></img>
+            <div className="col-span-4 flex gap-5">
+              <hr className="w-full my-auto border-t border-gray-200" />
+              <p className="w-fit whitespace-nowrap text-[#D7D7D7] font-light">
+                fixed.g/bikes 001 - 004
+              </p>
+            </div>
           </div>
           <div className="basis-1/2 mt-10 md:mt-0 flex flex-col mx-5 lg:mx-10 2xl:mx-20">
             <div className="flex flex-col gap-5 my-auto">
@@ -163,15 +171,68 @@ export default function Home() {
 
       {/* Repair Bike Section */}
       <div className="col-span-1"></div>
-      <div className="col-span-12 border-x pb-[50px] border-[#D7D7D7]">
-        <div className="w-[500px] h-[500px]">
-          <h1>Bike Repair Section</h1>
+      <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7]">
+        {/* absolute bg element */}
+        <Image
+          className="invisible md:visible absolute -z-50 bottom-0"
+          width={200}
+          height={200}
+          src={"/assets/svg/gear_element.svg"}
+          alt={"gear.svg"}
+        ></Image>
+        {/* ------------------- */}
+        <div className="flex flex-col md:flex-row justify-between m-[12px] md:m-[20px] 2xl:m-[50px]">
+          <div className="basis-1/2 mt-10 md:mt-0 flex flex-col mx-5 lg:mx-10 2xl:mx-20">
+            <div className="flex flex-col gap-5 my-auto">
+              <h1 className="text-[20px] lg:text-[30px] 2xl:text-[48px] text-center font-bold">
+                Something happened with your bike? We’ll handle it.
+              </h1>
+              <p className="text-center text-[16px] 2xl:text-[24px] font-normal">
+                Experience the thrill of seamless cycling once again at our
+                shop, where we specialize in repairing fixed gear bikes. Say
+                goodbye to wobbly rides and hello to precision and performance –
+                let's get your fixed gear bike back in its prime!
+              </p>
+              <div className="flex justify-center w-full">
+                <Button className="flex justify-center h-fit w-fit px-6 py-3 lg:px-10 lg:py-6 2xl:text-[24px] font-normal bg-[#4871F7] hover:bg-[#3C5ECC]">
+                  Browse Repair Types
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div className="flex gap-3">
+            {/* vertical line */}
+            <div className="flex flex-col gap-5">
+              <p
+                className="w-fit whitespace-nowrap text-[#D7D7D7] text-[16px] font-light [writing-mode:vertical-lr]"
+                style={{ transform: "rotate(180deg)" }}
+              >
+                fixed.g/mechanics
+              </p>
+              <div className="border-l border-[#D7D7D7] h-full mx-auto"></div>
+            </div>
+            <div className="grid grid-cols-4 gap-3">
+              <img
+                className="col-span-2 w-full h-full"
+                src="/assets/img/repair guy - 01.png"
+                alt="repair guy - 01"
+              ></img>
+              <img
+                className="col-span-2 w-full h-full"
+                src="/assets/img/repair guy - 02.png"
+                alt="repair guy - 02"
+              ></img>
+              <img
+                className="col-span-4 w-full h-full"
+                src="/assets/img/repair guy - 03.png"
+                alt="repair guy - 03"
+              ></img>
+            </div>
+          </div>
         </div>
       </div>
       <div className="col-span-1">
-        <h1
-          className="mx-auto mt-10 text-[#D7D7D7] font-thin [writing-mode:vertical-lr]"
-        >
+        <h1 className="mx-auto mt-10 text-[#D7D7D7] font-thin [writing-mode:vertical-lr]">
           02 - FG
         </h1>
       </div>
