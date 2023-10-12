@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Script from "next/script";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        ></script>
+        <script src="../lib/jquery-inertiaScroll.js"></script>
+      </Head>
       <body>
         <ThemeProvider
           attribute="class"
@@ -27,7 +35,6 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-        <Script src="../lib/parallax.js" strategy="beforeInteractive"/>
       </body>
     </html>
   );

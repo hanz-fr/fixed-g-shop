@@ -62,11 +62,13 @@ export default function Home() {
                 <div className="text-[#9B9B9B] text-xs 2xl:text-base">
                   scroll to explore
                 </div>
-                <img
-                  className="mx-auto w-[16px] h-[16px] animate-bounce"
-                  src="/assets/svg/chevron_down_blue.svg"
-                  alt="chev_down"
-                />
+                <a href="#bikes">
+                  <img
+                    className="mx-auto w-[16px] h-[16px] animate-bounce"
+                    src="/assets/svg/chevron_down_blue.svg"
+                    alt="chev_down"
+                  />
+                </a>
               </div>
             </div>
             <div className="max-[768px]:w-full max-[1600px]:w-1/2 max-w-[742px] max-h-[863px]">
@@ -83,7 +85,13 @@ export default function Home() {
       <div className="col-span-1"></div>
 
       {/*  Separator */}
-      <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
+      <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]" id="bikes">
+        <div className="w-full h-full flex items-center">
+          <div className="text-[#D7D7D7] font-thin mx-auto">
+            #
+          </div>
+        </div>
+      </div>
       <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] px-10 py-4">
         <h1 className="text-[#D7D7D7] font-thin">fixed.g/bikes</h1>
       </div>
