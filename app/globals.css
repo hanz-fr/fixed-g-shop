@@ -76,4 +76,7 @@ html {
   body {
     @apply bg-background text-foreground font-hauora;
   }
+  .element-dark {
+    @apply dark:hidden
+  }
 }

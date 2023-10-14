@@ -11,7 +11,7 @@ export default function Home() {
     const scrollbar = initializeSmoothScrollbar();
 
     return () => {
-      scrollbar.destroy(); // Clean up when the component unmounts
+      scrollbar.destroy();
     };
   }, []);
 
@@ -22,19 +22,19 @@ export default function Home() {
         style={{ gridTemplateColumns: "repeat(14, minmax(0, 1fr))" }}
       >
         {/* Top Bar */}
-        <div className="col-span-1 h-[60px] border-b border-[#D7D7D7]"></div>
-        <div className="col-span-12 h-[60px] border-x border-b border-[#D7D7D7]">
+        <div className="col-span-1 h-[60px] border-b border-[#D7D7D7] dark:border-[#292929]"></div>
+        <div className="col-span-12 h-[60px] border-x border-b border-[#D7D7D7] dark:border-[#292929]">
           <div className="flex justify-end h-full pr-3">
             <div className="my-auto">
               <ThemeButton />
             </div>
           </div>
         </div>
-        <div className="col-span-1 h-[60px] border-b border-[#D7D7D7]"></div>
+        <div className="col-span-1 h-[60px] border-b border-[#D7D7D7] dark:border-[#292929]"></div>
 
         {/* --  Hero Section -- */}
         <div className="col-span-1"></div>
-        <div className="col-span-12 border-x pb-[50px] border-[#D7D7D7]">
+        <div className="col-span-12 border-x pb-[50px] border-[#D7D7D7] dark:border-[#292929]">
           <div className="flex gap-2 m-[10px]">
             <Image
               width={41}
@@ -50,14 +50,14 @@ export default function Home() {
           </div>
           <div className="flex relative h-fit mt-10 md:mt-0">
             <Image
-              className="invisible md:visible absolute -z-50 -right-10 -bottom-[150px] spin-slow"
+              className="invisible md:visible element-dark absolute -z-50 -right-10 -bottom-[150px] spin-slow"
               width={200}
               height={200}
               src={"/assets/svg/nut_element.svg"}
               alt={"nut_element.svg"}
             ></Image>
             <Image
-              className="invisible md:visible absolute -z-50 -left-[300px]"
+              className="invisible md:visible element-dark absolute -z-50 -left-[300px]"
               width={1400}
               height={1400}
               src={"/assets/svg/bike_parts_element.svg"}
@@ -96,7 +96,7 @@ export default function Home() {
                   >
                     <circle cx="8.5" cy="8.5" r="8" stroke="#D7D7D7" />
                   </svg>
-                  <div className="mx-auto border-r border-[#D7D7D7] h-full"></div>
+                  <div className="mx-auto border-r border-[#D7D7D7] dark:border-[#292929] h-full"></div>
                   <p
                     className="w-fit whitespace-nowrap text-[#D7D7D7] text-[10px] md:text-[16px] font-light [writing-mode:vertical-lr]"
                     style={{ transform: "rotate(180deg)" }}
@@ -119,17 +119,17 @@ export default function Home() {
         <div className="col-span-1"></div>
         {/*  Separator */}
         <div
-          className="col-span-1 h-[60px] border-y border-[#D7D7D7]"
+          className="col-span-1 h-[60px] border-y border-[#D7D7D7] dark:border-[#292929]"
           id="bikes"
         >
           <div className="w-full h-full flex items-center">
             <div className="text-[#D7D7D7] font-thin mx-auto">#</div>
           </div>
         </div>
-        <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] px-10 py-4">
+        <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] dark:border-[#292929] px-10 py-4">
           <h1 className="text-[#D7D7D7] font-thin ">fixed.g/bikes</h1>
         </div>
-        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
+        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7] dark:border-[#292929]"></div>
 
         {/* -- Bikes Section -- */}
         <div className="col-span-1">
@@ -140,10 +140,10 @@ export default function Home() {
             01 - FG
           </h1>
         </div>
-        <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7]">
+        <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7] dark:border-[#292929]">
           {/* absolute bg element */}
           <Image
-            className="invisible md:visible absolute -z-50 -bottom-[300px] right-[30%]"
+            className="invisible md:visible element-dark absolute -z-50 -bottom-[300px] right-[30%]"
             width={500}
             height={500}
             src={"/assets/svg/wrench_element.svg"}
@@ -203,20 +203,20 @@ export default function Home() {
         <div className="col-span-1"></div>
 
         {/*  Separator */}
-        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
-        <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] px-10 py-4">
+        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7] dark:border-[#292929]"></div>
+        <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] dark:border-[#292929] px-10 py-4">
           <div className="flex justify-end">
             <h1 className="text-[#D7D7D7] font-thin">fixed.g/repair</h1>
           </div>
         </div>
-        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
+        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7] dark:border-[#292929]"></div>
 
         {/* -- Repair Bike Section -- */}
         <div className="col-span-1"></div>
-        <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7]">
+        <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7] dark:border-[#292929]">
           {/* absolute bg element */}
           <Image
-            className="invisible md:visible absolute -z-50 -bottom-[100px] -left-[15%] spin-slow"
+            className="invisible md:visible element-dark absolute -z-50 -bottom-[100px] -left-[15%] spin-slow"
             width={500}
             height={500}
             src={"/assets/svg/gear_element.svg"}
@@ -251,7 +251,7 @@ export default function Home() {
                 >
                   fixed.g/mechanics
                 </p>
-                <div className="border-l border-[#D7D7D7] h-full mx-auto"></div>
+                <div className="border-l border-[#D7D7D7] dark:border-[#292929] h-full mx-auto"></div>
               </div>
               <div className="grid grid-cols-4 gap-3">
                 <img
@@ -280,16 +280,16 @@ export default function Home() {
         </div>
 
         {/*  Separator */}
-        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
-        <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] px-10 py-4">
+        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7] dark:border-[#292929]"></div>
+        <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] dark:border-[#292929] px-10 py-4">
           <div className="flex justify-end">
             <h1 className="text-[#D7D7D7] font-thin">fixed.g/repair</h1>
           </div>
         </div>
-        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
+        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7] dark:border-[#292929]"></div>
 
         <div className="col-span-1"></div>
-        <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7]"></div>
+        <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7] dark:border-[#292929]"></div>
         <div className="col-span-1"></div>
       </div>
     </div>
