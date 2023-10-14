@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div className="col-span-1 h-[60px] border-b border-[#D7D7D7]"></div>
 
-        {/* Hero Section */}
+        {/* --  Hero Section -- */}
         <div className="col-span-1"></div>
         <div className="col-span-12 border-x pb-[50px] border-[#D7D7D7]">
           <div className="flex gap-2 m-[10px]">
@@ -84,14 +84,35 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="max-[768px]:w-full max-[1600px]:w-1/2 max-w-[742px] max-h-[863px]">
-                <Image
-                  width={1000}
-                  height={1000}
-                  src={"/assets/img/cycle.png"}
-                  alt={"cycle.png"}
-                ></Image>
+              <div className="flex justify-center w-full h-[400px] xl:w-[500px] xl:h-[500px] 2xl:w-[1000px] 2xl:h-[800px] gap-2 sm:gap-5">
+                <div className="w-fit flex flex-col gap-2 sm:gap-5">
+                  <svg
+                    className="w-fit mx-auto"
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="8.5" cy="8.5" r="8" stroke="#D7D7D7" />
+                  </svg>
+                  <div className="mx-auto border-r border-[#D7D7D7] h-full"></div>
+                  <p
+                    className="w-fit whitespace-nowrap text-[#D7D7D7] text-[10px] md:text-[16px] font-light [writing-mode:vertical-lr]"
+                    style={{ transform: "rotate(180deg)" }}
+                  >
+                    fixed.g/doc
+                  </p>
+                </div>
+                <video autoPlay loop muted className="rounded-lg">
+                  <source
+                    src="/assets/videos/cycle-dsnv.mp4"
+                    type="video/mp4"
+                  />
+                </video>
               </div>
+              {/* <div className="max-[768px]:w-full max-[1600px]:w-1/2 max-w-[742px] max-h-[863px]">
+              </div> */}
             </div>
           </div>
         </div>
@@ -110,7 +131,7 @@ export default function Home() {
         </div>
         <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
 
-        {/* Bike Section */}
+        {/* -- Bikes Section -- */}
         <div className="col-span-1">
           <h1
             className="mx-auto mt-10 text-[#D7D7D7] font-thin [writing-mode:vertical-lr]"
@@ -190,16 +211,16 @@ export default function Home() {
         </div>
         <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
 
-        {/* Repair Bike Section */}
+        {/* -- Repair Bike Section -- */}
         <div className="col-span-1"></div>
         <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7]">
           {/* absolute bg element */}
           <Image
-            className="invisible md:visible absolute -z-50 bottom-0"
-            width={200}
-            height={200}
+            className="invisible md:visible absolute -z-50 -bottom-[100px] -left-[15%]"
+            width={500}
+            height={500}
             src={"/assets/svg/gear_element.svg"}
-            alt={"gear.svg"}
+            alt={"gear_element.svg"}
           ></Image>
           {/* ------------------- */}
           <div className="flex flex-col gap-3 md:flex-row justify-between m-[12px] md:m-[20px] 2xl:m-[50px]">
@@ -257,6 +278,19 @@ export default function Home() {
             02 - FG
           </h1>
         </div>
+
+        {/*  Separator */}
+        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
+        <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] px-10 py-4">
+          <div className="flex justify-end">
+            <h1 className="text-[#D7D7D7] font-thin">fixed.g/repair</h1>
+          </div>
+        </div>
+        <div className="col-span-1 h-[60px] border-y border-[#D7D7D7]"></div>
+
+        <div className="col-span-1"></div>
+        <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7]"></div>
+        <div className="col-span-1"></div>
       </div>
     </div>
   );
