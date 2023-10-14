@@ -1,11 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import Script from "next/script";
-import Head from "next/head";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,15 +12,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+  // Define the options for Smooth Scrollbar
+  const options = {
+    
+    damping: 0.1,
+    thumbMinSize: 20,
+    
+  };
+
   return (
     <html lang="en">
-      <Head>
-        <script
-          src="https://code.jquery.com/jquery-3.7.1.min.js"
-          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-        ></script>
-        <script src="../lib/jquery-inertiaScroll.js"></script>
-      </Head>
       <body>
         <ThemeProvider
           attribute="class"
