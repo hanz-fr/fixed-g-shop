@@ -50,7 +50,7 @@ export default function Home() {
           </div>
           <div className="flex relative h-fit mt-10 md:mt-0">
             <Image
-              className="invisible md:visible absolute -z-50 -right-10 -bottom-[150px]"
+              className="invisible md:visible absolute -z-50 -right-10 -bottom-[150px] spin-slow"
               width={200}
               height={200}
               src={"/assets/svg/nut_element.svg"}
@@ -216,7 +216,7 @@ export default function Home() {
         <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7]">
           {/* absolute bg element */}
           <Image
-            className="invisible md:visible absolute -z-50 -bottom-[100px] -left-[15%]"
+            className="invisible md:visible absolute -z-50 -bottom-[100px] -left-[15%] spin-slow"
             width={500}
             height={500}
             src={"/assets/svg/gear_element.svg"}
