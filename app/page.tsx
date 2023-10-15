@@ -173,7 +173,7 @@ export default function Home() {
                 alt="bike - 04"
               ></img>
               <div className="col-span-4 flex gap-5">
-                <hr className="w-full my-auto border-t border-gray-200" />
+                <hr className="w-full my-auto border-t border-[#D7D7D7] dark:border-[#292929]" />
                 <p className="w-fit whitespace-nowrap text-[#D7D7D7] font-light text-[10px] md:text-[16px]">
                   fixed.g/bikes 001 - 004
                 </p>
