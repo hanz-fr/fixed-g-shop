@@ -327,16 +327,16 @@ export default function Home() {
         <div className="col-span-12 h-[60px] border-r border-b border border-[#D7D7D7] dark:border-[#292929] px-10 py-4"></div>
         <div className="col-span-1 h-[60px] border-y border-[#D7D7D7] dark:border-[#292929]"></div>
         <div className="col-span-1"></div>
-        <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7] dark:border-[#1b1919]">
-          <div className="m-5 flex gap-5">
+        <div className="col-span-12 relative border-x pb-[50px] border-[#D7D7D7] dark:border-[#292929]">
+          <div className="mr-4 2xl:mr-36 mt-9 md:mt-20 flex justify-end gap-5">
             <p className="w-fit whitespace-nowrap text-[#D7D7D7] font-light text-[10px] md:text-[16px]">
               fixed.g/cafe
             </p>
-            <hr className="w-full my-auto border-t border-[#D7D7D7] dark:border-[#292929]" />
+            <hr className="w-1/3 my-auto border-t border-[#D7D7D7] dark:border-[#292929]" />
             <svg
-              className="w-fit mx-auto"
-              width="17"
-              height="17"
+              className="w-fit my-auto"
+              width="15"
+              height="15"
               viewBox="0 0 17 17"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -344,12 +344,58 @@ export default function Home() {
               <circle cx="8.5" cy="8.5" r="8" stroke="#D7D7D7" />
             </svg>
           </div>
-          <div className="grid grid-rows-3 md:grid-cols-3 m-[12px] md:m-[20px] 2xl:m-[50px] md:flex-row gap-3">
+          <div className="grid grid-rows-1 md:grid-cols-3 m-[12px] md:m-[20px] 2xl:my-[50px] 2xl:mx-[150px] md:flex-row md:gap-5 2xl:gap-10">
             {currentWidth == "md" ? (
               <CafeImgNormal objectPosition={objectPosition} />
             ) : (
               <CafeImgCaruosel objectPosition={objectPosition} />
             )}
+          </div>
+          <div className="ml-4 2xl:ml-36 mb-9 md:mb-20 flex justify-start gap-5">
+            <svg
+              className="w-fit my-auto"
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="8.5" cy="8.5" r="8" stroke="#D7D7D7" />
+            </svg>
+            <hr className="w-1/3 my-auto border-t border-[#D7D7D7] dark:border-[#292929]" />
+            <p className="w-fit whitespace-nowrap text-[#D7D7D7] font-light text-[10px] md:text-[16px]">
+              fixed.g/cafe
+            </p>
+          </div>
+          <div className="grid grid-cols-5 w-full">
+            <div></div>
+            <div className="col-span-3 flex flex-col gap-5 2xl:gap-9 w-full">
+              <h1 className="text-[20px] lg:text-[30px] 2xl:text-[48px] text-center font-bold">
+                Need something to eat or drink?
+                <br />
+                Come over to FXG Cafe
+              </h1>
+              <p className="w-full lg:px-32 text-center text-[16px] 2xl:text-[24px] font-normal">
+                If you’re repairing your bike and it takes some time, don’t just
+                wait there and stare at the mechanics. Instead, you should come
+                to FXG Cafe and try our new and tasty frappucino!
+              </p>
+              <div className="flex justify-center w-full">
+                <Button className="flex justify-center h-fit w-fit px-6 py-3 lg:px-10 lg:py-6 2xl:text-[24px] font-normal bg-[#4871F7] hover:bg-[#3C5ECC]">
+                  Explore Menus
+                </Button>
+              </div>
+            </div>
+            <div>
+              <Image
+                className="invisible md:visible element-dark absolute -z-50 -right-[5%]"
+                width={300}
+                height={300}
+                src={"/assets/svg/cup_element.svg"}
+                alt={"gear_element.svg"}
+                style={{ transform: "rotate(-30deg)" }}
+              ></Image>
+            </div>
           </div>
         </div>
         <div className="col-span-1"></div>
