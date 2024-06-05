@@ -298,17 +298,17 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-4 gap-3">
                 <img
-                  className="col-span-2 w-full h-full rounded-lg"
+                  className="col-span-2 w-full h-full rounded-lg object-cover"
                   src="/assets/img/repair guy - 01.png"
                   alt="repair guy - 01"
                 ></img>
                 <img
-                  className="col-span-2 w-full h-full rounded-lg"
+                  className="col-span-2 w-full h-full rounded-lg object-cover"
                   src="/assets/img/repair guy - 02.png"
                   alt="repair guy - 02"
                 ></img>
                 <img
-                  className="col-span-4 w-full h-full rounded-lg"
+                  className="col-span-4 w-full h-full rounded-lg object-cover"
                   src="/assets/img/repair guy - 03.png"
                   alt="repair guy - 03"
                 ></img>
