@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import CafeImgCaruosel from "@/components/ui/cafe-img-carousel";
 import CafeImgNormal from "@/components/ui/cafe-img-normal";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -235,9 +236,11 @@ export default function Home() {
                   restored them like new again :)
                 </p>
                 <div className="flex justify-center w-full">
-                  <Button className="flex justify-center h-fit w-fit px-6 py-3 lg:px-10 lg:py-6 2xl:text-[24px] font-normal bg-[#4871F7] hover:bg-[#3C5ECC]">
-                    Explore Now!
-                  </Button>
+                  <Link href={"/bikes"}>
+                    <Button className="flex justify-center h-fit w-fit px-6 py-3 lg:px-10 lg:py-6 2xl:text-[24px] font-normal bg-[#4871F7] hover:bg-[#3C5ECC]">
+                      Explore Now!
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>

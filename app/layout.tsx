@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
+import Sidebar from "@/components/sidebar/sidebar";
 
 export const metadata: Metadata = {
   title: "FIXED.G",
