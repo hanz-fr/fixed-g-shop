@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { usePathname } from 'next/navigation'
 import { IoCloseOutline } from "react-icons/io5";
 import { BsBicycle } from "react-icons/bs";
 import { MdCoffee } from "react-icons/md";
@@ -8,7 +9,10 @@ import { RiToolsLine } from "react-icons/ri";
 import { Button } from "../ui/button";
 import SidebarLogo from "./sidebar-logo";
 
+
 export default function Sidebar() {
+  const pathname = usePathname();
+
   const [showSidebar, setShowSidebar] = useState(false);
   return (
     <>
@@ -63,7 +67,7 @@ export default function Sidebar() {
             <li>
               <a
                 href="/bikes"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group ${pathname == '/bikes' ? 'bg-gray-700 text-white' : ''}`}
               >
                 <BsBicycle size={25} />
                 <span className="ms-3">Bikes</span>
@@ -71,8 +75,8 @@ export default function Sidebar() {
             </li>
             <li>
               <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                href="/cafe"
+                className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group ${pathname == '/cafe' ? 'bg-gray-700 text-white' : ''}`}
               >
                 <MdCoffee size={25} />
                 <span className="ms-3">Cafe</span>
@@ -80,8 +84,8 @@ export default function Sidebar() {
             </li>
             <li>
               <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                href="repair"
+                className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group ${pathname == '/repair' ? 'bg-gray-700 text-white' : ''}`}
               >
                 <RiToolsLine size={25} />
                 <span className="ms-3">Repair</span>

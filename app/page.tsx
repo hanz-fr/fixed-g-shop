@@ -282,9 +282,11 @@ export default function Home() {
                   – let's get your fixed gear bike back in its prime!
                 </p>
                 <div className="flex justify-center w-full">
-                  <Button className="flex justify-center h-fit w-fit px-6 py-3 lg:px-10 lg:py-6 2xl:text-[24px] font-normal bg-[#4871F7] hover:bg-[#3C5ECC]">
-                    Browse Repair Types
-                  </Button>
+                  <Link href={"/repair"}>
+                    <Button className="flex justify-center h-fit w-fit px-6 py-3 lg:px-10 lg:py-6 2xl:text-[24px] font-normal bg-[#4871F7] hover:bg-[#3C5ECC]">
+                      Browse Repair Types
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -384,9 +386,11 @@ export default function Home() {
                 to FXG Cafe and try our new and tasty frappucino!
               </p>
               <div className="flex justify-center w-full">
-                <Button className="flex justify-center h-fit w-fit px-6 py-3 lg:px-10 lg:py-6 2xl:text-[24px] font-normal bg-[#4871F7] hover:bg-[#3C5ECC]">
-                  Explore Menus
-                </Button>
+                <Link href={"/cafe"}>
+                  <Button className="flex justify-center h-fit w-fit px-6 py-3 lg:px-10 lg:py-6 2xl:text-[24px] font-normal bg-[#4871F7] hover:bg-[#3C5ECC]">
+                    Explore Menus
+                  </Button>
+                </Link>
               </div>
             </div>
             <div>
